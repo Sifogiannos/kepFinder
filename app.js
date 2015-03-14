@@ -4,6 +4,7 @@
  */
 
 var express = require('express');
+require('./database.js');
 var routes = require('./routes');
 var user = require('./routes/user');
 var http = require('http');
@@ -30,6 +31,11 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
+
+/*
+	Find the latitude and longitude of each KEP and fill the database
+*/
+app.get('/findKepsCoordinates', user.findKepsCordinates);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
