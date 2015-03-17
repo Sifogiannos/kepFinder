@@ -11,6 +11,7 @@
     "mongoose-long"   : "*",
     "ejs"             : "*",
     "async"           : "*",
-    "simple-geocoder" : "*"
+    "simple-geocoder" : "*",
+    "geocoder"        : "*"
   }
 }

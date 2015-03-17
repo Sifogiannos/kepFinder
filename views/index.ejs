@@ -4,28 +4,50 @@
 	<title>FindyourKep</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel='stylesheet' href='/css/checkbox.css' />
 	<link rel='stylesheet' href='/css/main.css' />
 </head>
 <body>
 	<header>
 		<div class="brand">
-			<h3>Find your Kep</h3>
+			<img src="/img/logo.png" alt="">
 		</div>
 	</header>
-	<section class="container">
+	<section class="container" id="page-1">
 
 		<div class="centered intro">
-			<h3>Need to find your nearest kep?</h3>
+			<div class="logo">
+				<img src="/img/logo-white.png" alt="">
+			</div>
+
+			<h3>Βρες το κοντινότερο ΚΕΠ σε σένα!</h3>
+			<p>Πληκτρολόγησε τη διεύθυνσή σου ή επέλεξε τη χρήση του geolocation</p>
 			<form id="position" action="#" accept-charset="utf-8">
 				<div class="geolocation-switch">
 				</div>
 				<div class="input">
-					<input type="text" name="position" id="position-input" placeholder="Where are you now?" value="">
+					<input type="text" name="position" id="position-input" placeholder="Διεύθυνση" value="">
 				</div>
-				<button type="submit" class="button button-primary"><i class="fa fa-search"></i> Search !</button>
+				<button type="submit" class="button button-primary"><i class="fa fa-search"></i> Αναζήτηση !</button>
 			</form>
 		</div>
 
+	</section>
+	<section id="page-2">
+		<div class="actions">
+			<p>Αναζητηση σε :</p>
+			<div class="checkbox-input">
+				<input type="checkbox" id="tkm">
+				<label for="tkm">Εως 2km </label>
+			</div>
+			<div class="checkbox-input">
+				<input type="checkbox" id="fkm">
+				<label for="fkm">Εως 5km</label>
+			</div>
+		</div>
+		<div class="map" id="map-canvas">
+
+		</div>
 	</section>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
