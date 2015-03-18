@@ -97,6 +97,12 @@ $(function () {
 				center: myLatlng
 			}
 		map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+		var marker = new google.maps.Marker({
+    		position: myLatlng,
+    		map: map,
+    		title: "You are here",
+    		icon: '/img/blue_marker.png'
+    	});
 		tkmCircleOptions.map = map;
 		fkmCircleOptions.map = map;
 		tkmCircleOptions.center = myLatlng;
