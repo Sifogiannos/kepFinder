@@ -14,13 +14,13 @@ $ mongoimport --db findnearestkeps --collection keps --type csv --headerline --f
 
 ##Start the application
 
-###For Windows
+###For Windows/OSX
 
 ```bash
 node app.js
 ```
 
-###For Unix/OSX
+###For Unix
 
 ```bash
 nodejs app.js
