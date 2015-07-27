@@ -23,6 +23,7 @@ var keps = new mongoose.Schema({
 
 var kepDocs = mongoose.model('keps', keps);
 
+
 //Connect to local database
 mongoose.connect('localhost', 'findnearestkeps');
 
